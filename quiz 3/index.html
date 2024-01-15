@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz 3</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+
+      form {
+        max-width: 600px;
+        margin: auto;
+      }
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="#" method="post">
+      <h1>Health Insurance Information Form</h1>
+      <label for="yourName">Your Name</label>
+      <input type="text" id="yourName" name="yourName" required />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="streetAddress">Street Address</label>
+      <textarea
+        id="streetAddress"
+        name="streetAddress"
+        rows="4"
+        required
+      ></textarea>
+
+      <label for="city">City</label>
+      <input type="text" id="city" name="city" required />
+
+      <label for="zipCode">Zip Code</label>
+      <input type="text" id="zipCode" name="zipCode" required />
+
+      <label for="spousesName">Spouse's Name</label>
+      <input type="text" id="spousesName" name="spousesName" />
+
+      <label for="childrenName">Children (under age 26) Name</label>
+      <input type="text" id="childrenName" name="childrenName" />
+
+      <label for="employerOffer"
+        >Does your employer offer health insurance?</label
+      >
+      <select id="employerOffer" name="employerOffer">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="anyMessage">Any Message</label>
+      <textarea id="anyMessage" name="anyMessage" rows="4"></textarea>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" />
+
+      <label for="state">State</label>
+      <input type="text" id="state" name="state" />
+
+      <label for="country">Country</label>
+      <input type="text" id="country" name="country" />
+
+      <label for="spouseAge">Spouse Age</label>
+      <input type="number" id="spouseAge" name="spouseAge" />
+
+      <label for="childrenAge">Children Age</label>
+      <input type="number" id="childrenAge" name="childrenAge" />
+
+      <label for="medicare">Do you receive Medicare?</label>
+      <select id="medicare" name="medicare">
+        <option value="yes">Yes</option>
+        <option value="no">No</option>
+      </select>
+
+      <label for="fileUpload">Upload your Case Document</label>
+      <input type="file" id="fileUpload" name="fileUpload" />
+
+      <label for="hiddenField">Hidden Field</label>
+      <input
+        type="hidden"
+        id="hiddenField"
+        name="hiddenField"
+        value="hiddenValue"
+      />
+
+      <label for="colorPicker">Pick your favorite Color</label>
+      <input type="color" id="colorPicker" name="colorPicker" />
+
+      <label for="datePicker">Date of Birth</label>
+      <input type="date" id="datePicker" name="datePicker" />
+
+      <label for="timePicker">Time of Birth</label>
+      <input type="time" id="timePicker" name="timePicker" />
+
+      <label for="urlInput">Your Personal Website (if any)</label>
+      <input type="url" id="urlInput" name="urlInput" />
+
+      <label for="weekPicker">Preferred Week for your application</label>
+      <input type="week" id="weekPicker" name="weekPicker" />
+
+      <label for="numberInput"># of Members of your family</label>
+      <input type="number" id="numberInput" name="numberInput" />
+
+      <label for="radioOption">Do they know about your application?</label>
+      <div style="display: flex; gap: 10px; padding: 10px">
+        <div style="display: flex">
+          <input type="radio" id="yes" name="yes" value="yes" />
+          <label for="yes">Yes</label>
+        </div>
+        <div style="display: flex">
+          <input type="radio" id="no" name="no" value="no" />
+          <label for="no">No</label>
+        </div>
+      </div>
+
+      <label for="rangeInput">Did you like this form?</label>
+      <input type="range" id="rangeInput" name="rangeInput" />
+
+      <label for="searchInput">Search for anything</label>
+      <input type="search" id="searchInput" name="searchInput" />
+
+      <label for="submitBtn"></label>
+      <button
+        style="font-size: large; width: 100%"
+        type="submit"
+        id="submitBtn"
+      >
+        Send
+      </button>
+    </form>
+  </body>
+</html>

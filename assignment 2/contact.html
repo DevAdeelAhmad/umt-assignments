@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact | Azeem Tahir</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <style>
+      body {
+        padding-top: 56px;
+      }
+
+      .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+
+      footer {
+        background-color: #343a40;
+        padding: 10px;
+        text-align: center;
+        color: white;
+      }
+
+      .form-container {
+        max-width: 600px;
+        margin: 50px auto;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      min-height: 110vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    "
+  >
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Azeem Tahir</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Welcome</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favoritePersonalities.html"
+              >Favorite Personalities</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favoriteCities.html">Favorite Cities</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favoriteTouristSpots.html"
+              >Favorite Tourist Spots</a
+            >
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="contact" class="container mt-5 form-container">
+      <h2>Contact Information</h2>
+
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            class="form-control"
+            id="name"
+            name="name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            class="form-control"
+            id="email"
+            name="email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="contactNumber">Contact Number:</label>
+          <input
+            type="tel"
+            class="form-control"
+            id="contactNumber"
+            name="contactNumber"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea
+            class="form-control"
+            id="message"
+            name="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </section>
+
+    <footer class="mt-5">
+      <a href="#" class="mr-5 text-primary"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="mr-5 text-danger"><i class="fab fa-youtube"></i></a>
+      <a href="#" class="mr-5 text-primary"><i class="fab fa-linkedin"></i></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
